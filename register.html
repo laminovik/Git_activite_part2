@@ -12,11 +12,53 @@
     <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
   </head>
 
-  <body> 
+  <body>
+	<div class="container">
+	   <div class="jumbotron col-lg-6 col-lg-offset-3">
+		<h2 class="text-center">Créez votre compte gratuit !</h2>
+		<hr>
+		<form class="row">
+		  <div class="form-group">
+		    <label>Nom</label>
+		    <input type="email" class="form-control" id="last_name" placeholder="Votre nom">
+		  </div>
+		 <div class="form-group">
+		    <label>Prenom</label>
+		    <input type="email" class="form-control" id="first_name" placeholder="Votre prenom">
+		  </div>
+		  <div class="form-group">
+		    <label>Pseudo</label>
+		    <input type="email" class="form-control" id="user_name" placeholder="Choisissez un pseudo">
+		  </div>
+
+		  <div class="form-group">
+		    <label>email</label>
+		    <input type="email" class="form-control" placeholder="Votre email">
+		  </div>
+	 	 <div class="form-group">
+		    <label>Mot de passe</label>
+		    <input type="password" class="form-control" id="pswd1" placeholder="Votre mot de passe">
+		    <span class="col-lg-offset-3" id="pswd_msg1" style="color:red; display:none;"><i>Le mot de passe doit comporter au moins 6 caractères</i></span>
+		  </div>
+		 
+		 <div class="form-group">
+		    <label>Confirmation</label>
+		    <input type="password" class="form-control" id="pswd2" placeholder="Confirmez votre mot de passe">
+		    <span class="col-lg-offset-3" id="pswd_msg2" style="color:red; display: none;">Les deux mots de passe doivent être identiques</span>
+		  </div>
+	       	  
+		  <div class="form-group">
+		    <button type="submit" class="btn btn-info pull-right">Envoyer</button>
+		  </div>
+		</form>
+	      </div>
+	</div>
+ 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Javascript de Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
-  </body>
+    <script src="ctrl.js"></script> 
+ </body>
 
 </html>
